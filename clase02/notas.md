@@ -57,10 +57,51 @@ app.put()
 app.delete()
 ```
 -----
-## Modulos
+## Modulos e Importaciones
 
 extension `archivo.mjs` 
 
+**CommonJS**
+
+**Sintaxis**: Utilizada tradicionalmente en Node.js, CommonJS emplea la función require() para importar módulos.
+**Ejecución**: Los módulos se ejecutan de manera síncrona, lo que significa que la ejecución se detiene hasta que el módulo se carga completamente.
+**Exportación**: Se utiliza module.exports para exportar valores desde un módulo.
+
+**Ejemplo**: 
+```javascript
+// modulo.js
+module.exports = {
+  mensaje: 'Hola desde CommonJS'
+};
+
+// index.js
+const modulo = require('./modulo');
+console.log(modulo.mensaje);
+```
+
+**ES6 (ES Modules)**
+
+**Sintaxis**: Más moderna y limpia, utiliza las palabras clave import y export.
+**Ejecución**: Los módulos se pueden cargar de forma síncrona o asíncrona.
+**Exportación**: Se utiliza export para exportar valores y default para exportar un valor por defecto.
+
+**Ejemplo**:
+
+```javascript
+// modulo.js
+export const mensaje = 'Hola desde ES6';
+export default function saludar() {
+  console.log('¡Saludos!');
+}
+
+// index.js
+import { mensaje } from './modulo';
+import saludar from './modulo';
+
+console.log(mensaje);
+saludar();
+```
+---
 Exportar
 `export {
     app,

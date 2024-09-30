@@ -63,9 +63,9 @@ extension `archivo.mjs`
 
 **CommonJS**
 
-**Sintaxis**: Utilizada tradicionalmente en Node.js, CommonJS emplea la función require() para importar módulos.
-**Ejecución**: Los módulos se ejecutan de manera síncrona, lo que significa que la ejecución se detiene hasta que el módulo se carga completamente.
-**Exportación**: Se utiliza module.exports para exportar valores desde un módulo.
+- **Sintaxis**: Utilizada tradicionalmente en Node.js, CommonJS emplea la función require() para importar módulos.
+- **Ejecución**: Los módulos se ejecutan de manera síncrona, lo que significa que la ejecución se detiene hasta que el módulo se carga completamente.
+- **Exportación**: Se utiliza module.exports para exportar valores desde un módulo.
 
 **Ejemplo**: 
 ```javascript
@@ -81,9 +81,9 @@ console.log(modulo.mensaje);
 
 **ES6 (ES Modules)**
 
-**Sintaxis**: Más moderna y limpia, utiliza las palabras clave import y export.
-**Ejecución**: Los módulos se pueden cargar de forma síncrona o asíncrona.
-**Exportación**: Se utiliza export para exportar valores y default para exportar un valor por defecto.
+- **Sintaxis**: Más moderna y limpia, utiliza las palabras clave import y export.
+- **Ejecución**: Los módulos se pueden cargar de forma síncrona o asíncrona.
+- **Exportación**: Se utiliza export para exportar valores y default para exportar un valor por defecto.
 
 **Ejemplo**:
 
